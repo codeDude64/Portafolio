@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
 
 *{
     margin: 0;
@@ -11,6 +13,7 @@
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
+    background-color: #6181CE;
 }
 
 header{
@@ -171,4 +174,45 @@ h1{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    margin-right: 2em;
+    margin-left: 2em;
+    padding: 1.5em; 
+    background-color: #E3F0A0;
+    border-radius: .5em;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.card:last-child{
+    margin-bottom: 5em;
+}
+
+.card-header{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Pacifico', cursive;
+}
+
+.card-body{
+    font-size: 1.5em;
+    font-family: 'Courgette', cursive;
+}
+
+footer{
+    padding: 2em;
+    background-color: #191f26;
+    color: #777777
 }
