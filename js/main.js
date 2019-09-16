@@ -2,8 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const facebook = document.querySelector('.facebook-circle');
     const twitter = document.querySelector('.twitter-circle');
     const instagram = document.querySelector('.instagram-circle');
-    let socialNetworks = [facebook,twitter,instagram];
-    let URLs = ['https://www.facebook.com/ChavaTI','https://twitter.com/ChavaTI_','https://www.instagram.com/chavatloz/'];
+    const github = document.querySelector('.github-circle');
+    let socialNetworks = [facebook,twitter,instagram,github];
+    let URLs = ['https://www.facebook.com/ChavaTI','https://twitter.com/ChavaTI_','https://www.instagram.com/chavatloz/','https://github.com/ChavaTI'];
 
 
     for (let i = 0; i < socialNetworks.length; i++) {
