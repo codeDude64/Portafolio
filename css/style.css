@@ -13,7 +13,9 @@
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
-    background-color: #6181CE;
+    /* background-color: #6181CE; */
+    background: url(../img/blue.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
 
 header{
