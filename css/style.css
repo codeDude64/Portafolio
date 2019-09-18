@@ -13,9 +13,6 @@
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
-    /* background-color: #6181CE; */
-    background: url(../img/blue.jpg) no-repeat center center fixed;
-    background-size: cover;
 }
 
 header{
@@ -192,9 +189,9 @@ section{
     margin-right: 2em;
     margin-left: 2em;
     padding: 1.5em; 
-    background-color: #E3F0A0;
+    background-color: rgba(128, 128, 128,.15);
     border-radius: .5em;
-    box-shadow: 10px 10px 5px grey;
+    
 }
 
 .card:last-child{
