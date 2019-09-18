@@ -189,9 +189,12 @@ section{
     margin-right: 2em;
     margin-left: 2em;
     padding: 1.5em; 
-    background-color: rgba(128, 128, 128,.15);
     border-radius: .5em;
     
+}
+
+.p-card{
+    background-color: rgba(128, 128, 128,.15);
 }
 
 .card:last-child{
@@ -215,3 +218,5 @@ footer{
     background-color: #191f26;
     color: #777777
 }
+
+
