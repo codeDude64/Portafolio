@@ -211,6 +211,8 @@ section{
 .card-body{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5em;
     font-family: 'Courgette', cursive;
 }
@@ -224,7 +226,7 @@ section{
     width: 1.5em;
     height: 1.5em;
     margin-right: .4em;
-    margin-bottom: .2em;
+    margin-bottom: .4em;
     /* box-shadow: 10px 10px 5px grey; */
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
@@ -253,6 +255,35 @@ section{
 #java-card{
     background-color: #f13d3d;
     color: white;
+}
+
+#db-card{
+    background-color: #2f5676;
+    color: white;
+}
+
+#diagram-card{
+    background-color: #1d2f3f;
+    color: #36b173;
+}
+
+#linux-card{
+    background-color: #3333;
+}
+
+#docker-card{
+    background-color: #309aeb;
+    color: white;
+}
+
+#language-card{
+    background-color: #ffff40;
+    color: #1b3641;
+}
+
+#learning-card{
+    background-color: #00ebff;
+    color: #191919;
 }
 
 .card-t i {
