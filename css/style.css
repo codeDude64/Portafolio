@@ -137,6 +137,7 @@ h1{
 
 .facebook-circle{
     background-color: #4267b2;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
     width: 1.5em;
     height: 1.5em;
     display: flex;
@@ -147,6 +148,7 @@ h1{
 
 .twitter-circle{
     background-color: #1da1f2;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
     width: 1.5em;
     height: 1.5em;
     display: flex;
@@ -157,6 +159,7 @@ h1{
 
 .instagram-circle{
     background: linear-gradient(to right top,#e0bf03,#e70a19,#7c39ad);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
     width: 1.5em;
     height: 1.5em;
     display: flex;
@@ -167,6 +170,20 @@ h1{
 
 .github-circle{
     background-color: #24292e;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.linkedin-circle{
+    background-color: white;
+    color: #0077b5;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
     width: 1.5em;
     height: 1.5em;
     display: flex;

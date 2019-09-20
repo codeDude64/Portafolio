@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const twitter = document.querySelector('.twitter-circle');
     const instagram = document.querySelector('.instagram-circle');
     const github = document.querySelector('.github-circle');
-    let socialNetworks = [facebook, twitter, instagram, github];
-    let URLs = ['https://www.facebook.com/ChavaTI', 'https://twitter.com/ChavaTI_', 'https://www.instagram.com/chavatloz/', 'https://github.com/ChavaTI'];
+    const linkedin = document.querySelector('.linkedin-circle');
+    let socialNetworks = [facebook, twitter, instagram, github,linkedin];
+    let URLs = ['https://www.facebook.com/ChavaTI', 'https://twitter.com/ChavaTI_', 'https://www.instagram.com/chavatloz/', 'https://github.com/ChavaTI','https://www.linkedin.com/in/salvador-hernández-lópez-a2ab7315a/'];
 
 
     for (let i = 0; i < socialNetworks.length; i++) {
