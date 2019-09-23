@@ -1,3 +1,5 @@
+// Social network code
+
 document.addEventListener("DOMContentLoaded", function () {
     const facebook = document.querySelector('.facebook-circle');
     const twitter = document.querySelector('.twitter-circle');
@@ -25,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+// smoothScroll code
 
 const ease = (t, b, c, d) => {
     t /= d / 2;
@@ -53,22 +56,112 @@ const smoothScroll = (targetId, duration) => {
     requestAnimationFrame(animation);
 }
 
-document.querySelector('#toAbout').addEventListener('click', () => {
-    smoothScroll('#about',2000);
+const menuItems = [document.querySelector('#toAbout'),
+                  document.querySelector('#toSkills'),
+                  document.querySelector('#toPortafolio'),
+                  document.querySelector('#toExperience'),
+                  document.querySelector('#toContact')
+                 ];
+const targets = ['#about','#skills','#portafolio','#experience','#contact'];
+
+for (let i = 0; i < menuItems.length; i++) {
+    const menuItem = menuItems[i];
+    const target = targets[i];
+
+    menuItem.addEventListener('click', () => {
+        smoothScroll(target,2000);
+    });
+}
+
+
+//TODO: About-Skills
+
+
+document.querySelector('#react-card').addEventListener('click', () => {
+
 });
 
-document.querySelector('#toSkills').addEventListener('click', () => {
-    smoothScroll('#skills',2000);
-});
+const skills = [
+                document.querySelector('#react-card'),
+                document.querySelector('#angular-card'),
+                document.querySelector('#node-card'),
+                document.querySelector('#php-card'),
+                document.querySelector('#java-card'),
+                document.querySelector('#db-card'),
+                document.querySelector('#linux-card'),
+                document.querySelector('#docker-card'),
+                document.querySelector('#diagram-card'),
+                document.querySelector('#language-card'),
+                document.querySelector('#learning-card')
+               ];
 
-document.querySelector('#toPortafolio').addEventListener('click', () => {
-    smoothScroll('#portafolio',2000);
-});
+const skillsName = [
+                    'React',
+                    'Angular',
+                    'NodeJS',
+                    'PHP',
+                    'Java',
+                    'Data Bases',
+                    'Linux',
+                    'Docker',
+                    'Software engineering',
+                    'Languages',
+                    'Learning'
+                   ];
 
-document.querySelector('#toExperience').addEventListener('click', () => {
-    smoothScroll('#experience',2000);
-});
+const iconSkill = [
+                    ['fab fa-react','react-card'],
+                    ['fab fa-angular','angular-card'],
+                    ['fab fa-node-js','node-card'],
+                    ['fab fa-php','php-card'],
+                    ['fab fa-java','java-card'],
+                    ['fas fa-database','db-card'],
+                    ['fab fa-linux','linux-card'],
+                    ['fab fa-docker','docker-card'],
+                    ['fas fa-project-diagram','diagram-card'],
+                    ['fas fa-language','language-card'],
+                    ['fas fa-book-reader','learning-card']
+                  ];
 
-document.querySelector('#toContact').addEventListener('click', () => {
-    smoothScroll('#contact',2000);
-});
+const themes = [
+                '#282c34',
+                '#f0f0f080',
+                '#333333',
+                '#7478ae',
+                '#f13d3d',
+                '#2f5676',
+                '#f0f0f080',
+                '#309aeb',
+                '#1d2f3f',
+                '#87c540',
+                '#3be1f0'
+               ];
+
+const aboutSkill = document.querySelector('#about-skill');
+
+const skillIsSelected = false;
+
+
+for (let i = 0; i < skills.length; i++) {
+    const skill = skills[i];
+    
+    skill.addEventListener('mouseover', () => {
+        document.body.style.cursor = "pointer";
+    });
+
+    skill.addEventListener('mouseout', () => {
+        document.body.style.cursor = "default";
+    });
+
+    skill.addEventListener('click', () => {
+        aboutSkill.style.display = 'block';
+        aboutSkill.style.backgroundColor = themes[i];
+        aboutSkill.firstElementChild.firstElementChild.innerHTML = skillsName[i];
+        aboutSkill.firstElementChild.firstElementChild.nextElementSibling.className = iconSkill[i][1] + " card-about-icon" ;
+        aboutSkill.firstElementChild.firstElementChild.nextElementSibling.innerHTML = `<i class = "${iconSkill[i][0]}"></i>`;
+
+       
+    });
+    
+}
+

@@ -210,10 +210,6 @@ section{
     
 }
 
-.p-card{
-    background-color: rgba(128, 128, 128,.15);
-}
-
 .card:last-child{
     margin-bottom: 5em;
 }
@@ -249,62 +245,72 @@ section{
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-#angular-card{
-    background-color: white;
+.angular-card{
+    background-color: #f0f0f080;
     color: #b73036;
     /* border: 1px solid black; */
 }
 
-#react-card{
+.react-card{
     background-color: #282c34;
     color: #61dafb;
 }
 
-#node-card{
+.node-card{
     background-color: #333333;
     color:#70c12a;
 }
 
-#php-card{
+.php-card{
     background-color: #7478ae;
 }
 
-#java-card{
+.java-card{
     background-color: #f13d3d;
     color: white;
 }
 
-#db-card{
+.db-card{
     background-color: #2f5676;
     color: white;
 }
 
-#diagram-card{
+.diagram-card{
     background-color: #1d2f3f;
     color: #36b173;
 }
 
-#linux-card{
-    background-color: #ffffff;
+.linux-card{
+    background-color: #f0f0f080;
 }
 
-#docker-card{
+.docker-card{
     background-color: #309aeb;
     color: white;
 }
 
-#language-card{
-    background-color: #ffff40;
+.language-card{
+    background-color: #87c540;
     color: #1b3641;
 }
 
-#learning-card{
+.learning-card{
     background-color: #3be1f0;
     color: #191919;
 }
 
 .card-t i {
     padding: 20em;
+}
+
+.about-skill{
+    display: none;
+}
+
+.card-about-icon{
+    font-size: 10em;
+    align-self: center;
+    padding-bottom: .2em;
 }
 
 
