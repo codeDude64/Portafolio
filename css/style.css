@@ -144,6 +144,7 @@ h1{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .twitter-circle{
@@ -155,6 +156,7 @@ h1{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .instagram-circle{
@@ -166,6 +168,7 @@ h1{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .github-circle{
@@ -177,6 +180,7 @@ h1{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .linkedin-circle{
@@ -190,6 +194,7 @@ h1{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 section{
@@ -297,6 +302,10 @@ section{
 .learning-card{
     background-color: #3be1f0;
     color: #191919;
+}
+
+.card-t  {
+    cursor: pointer;
 }
 
 .card-t i {
