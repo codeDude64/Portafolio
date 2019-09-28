@@ -30,10 +30,10 @@ const ease = (t, b, c, d) => {
 
 const smoothScroll = (targetId, duration) => {
     let target = document.querySelector(targetId);
-    let targetPosition = target.getBoundingClientRect().top;
     let startPosition = window.pageYOffset;
-    let distance = targetPosition - startPosition;
+    let distance = target.getBoundingClientRect().top; // Es la distancia de la esquina superior de la ventana al target
     let startTime = null;
+
 
     const animation = currentTime => {
         if (startTime === null) startTime = currentTime;
@@ -162,6 +162,7 @@ for (let i = 0; i < skills.length; i++) {
 
         if (skill.checked) {
             aboutSkill.style.display = 'block';
+            smoothScroll('#about-skill', 2000);
             aboutSkill.style.backgroundColor = themes[i];
             aboutSkill.firstElementChild.firstElementChild.innerHTML = skillsName[i];
             aboutSkill.firstElementChild.firstElementChild.nextElementSibling.className = iconSkill[i][1] + " card-about-icon";
