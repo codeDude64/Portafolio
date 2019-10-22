@@ -48,30 +48,31 @@ const smoothScroll = (targetId, duration) => {
     requestAnimationFrame(animation);
 }
 
-const menuItems = [document.querySelector('#toAbout'),
-    document.querySelector('#toSkills'),
-    document.querySelector('#toPortafolio'),
-    document.querySelector('#toExperience'),
-    document.querySelector('#toContact')
-];
-const targets = ['#about', '#skills', '#portafolio', '#experience', '#contact'];
+// to Sections
 
-for (let i = 0; i < menuItems.length; i++) {
-    const menuItem = menuItems[i];
-    const target = targets[i];
-
-    menuItem.addEventListener('click', () => {
-        smoothScroll(target, 2000);
-    });
+const toSections = () => {
+    const menuItems = [
+        document.querySelector('#toAbout'),
+        document.querySelector('#toSkills'),
+        document.querySelector('#toPortafolio'),
+        document.querySelector('#toExperience'),
+        document.querySelector('#toContact')
+    ];
+    const targets = ['#about', '#skills', '#portafolio', '#experience', '#contact'];
+    
+    for (let i = 0; i < menuItems.length; i++) {
+        const menuItem = menuItems[i];
+        const target = targets[i];
+    
+        menuItem.addEventListener('click', () => {
+            smoothScroll(target, 2000);
+        });
+    }
 }
 
+toSections();
 
 //TODO: About-Skills
-
-
-document.querySelector('#react-card').addEventListener('click', () => {
-
-});
 
 const skills = [
     document.querySelector('#react'),
@@ -129,7 +130,7 @@ const themes = [
     '#3be1f0'
 ];
 
-
+// check and uncheck radio button hide in the skills icons
 const checkUncheckRadio = () => {
     let booRadio;
     for (let i = 0; i < skills.length; i++) {
@@ -152,7 +153,8 @@ const checkUncheckRadio = () => {
 checkUncheckRadio();
 
 
-const aboutSkill = document.querySelector('#about-skill');
+const showAboutSkills = () => {
+    const aboutSkill = document.querySelector('#about-skill');
 
 
 for (let i = 0; i < skills.length; i++) {
@@ -173,3 +175,6 @@ for (let i = 0; i < skills.length; i++) {
     });
 
 }
+}
+
+showAboutSkills();
