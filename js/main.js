@@ -1,5 +1,5 @@
 // Social network code
-import {socialNetworks,URLs,menuItems,targets,skillsName,iconSkill,the} from './items';
+import {socialNetworks,URLs,menuItems,targets,skillsName,iconSkill,themes} from './items';
 
 document.addEventListener("DOMContentLoaded", function () {
     //
