@@ -3,7 +3,7 @@ module.exports = {
       home: './js/main.js',
     },
     output: {
-      filename: 'dist/js/main.js'
+      filename: 'js/main.js'
     },
     module: {
       rules: [
