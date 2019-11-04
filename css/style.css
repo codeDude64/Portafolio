@@ -228,6 +228,23 @@ section{
 
 .card-body{
     display: flex;
+    font-size: 1.5em;
+    font-family: 'Courgette', cursive;
+}
+
+.card-body p:nth-child(1){
+    order: 1;
+    flex-grow: 1;
+}
+
+.card-body p:nth-child(2){
+    order:2;
+    flex-grow: 2;
+}
+
+.card-body-skills{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;

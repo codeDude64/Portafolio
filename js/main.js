@@ -1,5 +1,5 @@
 // Social network code
-import {socialNetworks,URLs,menuItems,targets,skillsName,iconSkill,themes} from './items';
+import { socialNetworks, URLs, menuItems, targets, skillsName, iconSkill, themes } from './items';
 
 document.addEventListener("DOMContentLoaded", function () {
     //
@@ -49,7 +49,7 @@ const toSections = () => {
     for (let i = 0; i < menuItems.length; i++) {
         const menuItem = menuItems[i];
         const target = targets[i];
-    
+
         menuItem.addEventListener('click', () => {
             smoothScroll(target, 2000);
         });
@@ -103,24 +103,24 @@ const showAboutSkills = () => {
     const aboutSkill = document.querySelector('#about-skill');
 
 
-for (let i = 0; i < skills.length; i++) {
-    const skill = skills[i];
+    for (let i = 0; i < skills.length; i++) {
+        const skill = skills[i];
 
-    skill.addEventListener('click', () => {
+        skill.addEventListener('click', () => {
 
-        if (skill.checked) {
-            aboutSkill.style.display = 'block';
-            smoothScroll('#about-skill', 2000);
-            aboutSkill.style.backgroundColor = themes[i];
-            aboutSkill.firstElementChild.firstElementChild.innerHTML = skillsName[i];
-            aboutSkill.firstElementChild.firstElementChild.nextElementSibling.className = iconSkill[i][1] + " card-about-icon";
-            aboutSkill.firstElementChild.firstElementChild.nextElementSibling.innerHTML = `<i class = "${iconSkill[i][0]}"></i>`;
-        } else {
-            aboutSkill.style.display = 'none';
-        }
-    });
+            if (skill.checked) {
+                aboutSkill.style.display = 'block';
+                smoothScroll('#about-skill', 2000);
+                aboutSkill.style.backgroundColor = themes[i];
+                aboutSkill.firstElementChild.firstElementChild.innerHTML = skillsName[i];
+                aboutSkill.firstElementChild.firstElementChild.nextElementSibling.className = iconSkill[i][1] + " card-about-icon";
+                aboutSkill.firstElementChild.firstElementChild.nextElementSibling.innerHTML = `<i class = "${iconSkill[i][0]}"></i>`;
+            } else {
+                aboutSkill.style.display = 'none';
+            }
+        });
 
-}
+    }
 }
 
 showAboutSkills();
