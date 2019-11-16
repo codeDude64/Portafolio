@@ -1,5 +1,5 @@
 // Social network code
-import { socialNetworks, URLs, menuItems, targets, skillsName, iconSkill, themes, aboutSkillText } from './items';
+import { socialNetworks, URLs, menuItems, targets, skillsName, skills, iconSkill, SkillThemes, aboutSkillText } from './items';
 
 document.addEventListener("DOMContentLoaded", function () {
     //
@@ -60,21 +60,6 @@ toSections();
 
 //TODO: About-Skills
 
-const skills = [
-    document.querySelector('#react'),
-    document.querySelector('#angular'),
-    document.querySelector('#node'),
-    document.querySelector('#php'),
-    document.querySelector('#java'),
-    document.querySelector('#db'),
-    document.querySelector('#linux'),
-    document.querySelector('#docker'),
-    document.querySelector('#diagram'),
-    document.querySelector('#language'),
-    document.querySelector('#learning')
-];
-
-//
 
 // check and uncheck radio button hide in the skills icons
 const checkUncheckRadio = () => {
@@ -113,7 +98,7 @@ const showAboutSkills = () => {
             if (skill.checked) {
                 aboutSkill.style.display = 'block';
                 smoothScroll('#about-skill', 2000);
-                aboutSkill.style.backgroundColor = themes[i];
+                aboutSkill.style.backgroundColor = SkillThemes[i];
                 title.innerHTML = skillsName[i];
                 icon.innerHTML = `<i class = "${iconSkill[i][0]}"></i>`;
                 icon.className = iconSkill[i][1] + " card-about-icon";
