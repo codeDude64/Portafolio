@@ -112,3 +112,14 @@ const showAboutSkills = () => {
 }
 
 showAboutSkills();
+
+
+
+const backToSkills = () => {
+    let backToSkillArrow = document.querySelector('#back-to-skills');
+    backToSkillArrow.addEventListener('click', () => {
+        smoothScroll('#skills', 2000)
+    });
+}
+
+backToSkills();
