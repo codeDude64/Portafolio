@@ -246,30 +246,42 @@ section{
 .card-body-skills{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
     font-family: 'Courgette', cursive;
+    width: 200vh;
+    padding: 1em;
+    /* overflow-x: scroll; */
 }
 
 .card-t{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 4em;
+    /* font-size: 4em; */
+    /* padding: 1em; */
     border-radius: 50%;
-    width: 1.5em;
-    height: 1.5em;
+    width: 3.5em;
+    height: 3.5em;
     margin-right: .4em;
-    margin-bottom: .4em;
-    /* box-shadow: 10px 10px 5px grey; */
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    cursor: pointer;
+    transform: scale(2,2);
+    transition: transform 1s;
 }
 
+.card-t:hover{
+    transform: scale(2.5,2.5);
+    /* position: absolute; */
+    z-index: 1;
+    /* right: 50%; */
+}
+
+
 .angular-card{
-    background-color: #f0f0f080;
+    background-color: #f0f0f0;
     color: #b73036;
     /* border: 1px solid black; */
 }
@@ -304,7 +316,7 @@ section{
 }
 
 .linux-card{
-    background-color: #f0f0f080;
+    background-color: #f0f0f0;
 }
 
 .docker-card{
@@ -322,13 +334,8 @@ section{
     color: #191919;
 }
 
-.card-t  {
-    cursor: pointer;
-}
 
-.card-t i {
-    padding: 20em;
-}
+
 
 .about-skill{
     display: none;
@@ -338,6 +345,18 @@ section{
     font-size: 10em;
     align-self: center;
     padding-bottom: .2em;
+}
+
+.arrow-up{
+    position: absolute;
+    right: 2em;
+    font-size: 4em;
+    color: #191919;
+    transition: transform 1s;
+}
+
+.arrow-up:hover{
+    transform: scale(1.2,1.2);
 }
 
 
