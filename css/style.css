@@ -253,6 +253,7 @@ section{
     font-family: 'Courgette', cursive;
     width: 200vh;
     padding: 1em;
+    padding-bottom: 2em;
     /* overflow-x: scroll; */
 }
 
