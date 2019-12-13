@@ -235,7 +235,7 @@ section{
     text-align: justify;
 }
 
-.card-body > div {
+.card-body > .me-icon {
     margin-right: 10%;
     margin-left: 10%;
     color: #2d3334;
@@ -358,6 +358,44 @@ section{
 
 .arrow-up:hover{
     transform: scale(1.2,1.2);
+}
+
+.square-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #808080;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    font-size: 14pt;
+    max-width: 400px;
+    max-height: 450px;
+    border-radius: 25px 25px 25px 25px;
+    cursor: pointer;
+}
+
+.square-card-header{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-block-end: 2px solid black;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 5px;
+}
+
+.square-card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.square-card-body > img {
+    padding-bottom: 20px;
+}
+
+.square-card-body > p {
+    padding: 1.5em;
 }
 
 
