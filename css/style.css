@@ -400,12 +400,10 @@ section{
 
 .square-card-footer{
     margin: 1em;
-    border-radius: 25px 25px 25px 25px;
 }
 
 .square-card-footer > button {
     padding: 1em;
-     
     border-radius: 25px 5px 25px 5px;
     background-color: white;
 }
