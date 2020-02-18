@@ -301,6 +301,10 @@ section{
     background-color: #7478ae;
 }
 
+.laravel-card{
+    background-color: #ff2d20;
+}
+
 .java-card{
     background-color: #f13d3d;
     color: white;
