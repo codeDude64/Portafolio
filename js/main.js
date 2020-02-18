@@ -123,3 +123,14 @@ const backToSkills = () => {
 }
 
 backToSkills();
+
+let tsaBtn = document.querySelector('#tsa-rm');
+tsaBtn.addEventListener('click', () => {
+    Swal.fire({
+        title: 'The software artisans',
+        text: `Under this period on TSA I've developed web solutions used differents tools and I've trained to the new people in TSA. I'm using languages like php, java, 
+        javascript, frameworks like reactjs, angular, laravel, about backend tools I've used NodeJS, Socket.io, JWT, Express and the databases are mysql, mongodb. All of sevrer run in docker.`,
+        imageUrl: './img/tsa.png',
+        imageAlt: 'Custom image',
+      })
+});
