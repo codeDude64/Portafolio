@@ -22,5 +22,14 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  mode: 'development',
+  devtool: 'inline-source-map',
+  watchOptions: {
+    ignored: /node_modules/
+  },
+  devServer: {
+    contentBase : './',
+    compress: true
+  },
 }
